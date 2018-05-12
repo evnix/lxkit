@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<App>
+<Window title="Example" id="win1" width="300" height="500" hasMenubar="false">
+	<VerticalBox>
+
+		<Button id="btn1" stretchy="false">
+	        Button 1
+	    </Button>
+
+	    <Button id="btn2" stretchy="false">Button 2</Button>
+
+	     <TextInput id="txt1" enabled="false" >txt1 default Value</TextInput>
+	     <TextInput id="txt2" enabled="true"  >txt2 default Value</TextInput>
+	     <TextInput id="txt3" readOnly="true" >txt3 default Value</TextInput>
+	     <TextInput id="txt4" visible="false" >txt4 default Value</TextInput>
+	     <TextInput id="txt5" mode="password"   >txt5 default Value</TextInput>
+	     <TextInput id="txt6" mode="multiline">txt6 default Value</TextInput>
+	     <TextInput id="txt7" mode="search"   >txt7 default Value</TextInput>
+	</VerticalBox>
+</Window>
+</App>
