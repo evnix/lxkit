@@ -135,17 +135,7 @@ libuixml.drawTextInput = function (textInput,parent)
     libuixml.elementMap[id] = textInputObj
     textInputObj:ReadOnly(readOnly)
     
-    if visible then
-    	textInputObj:Show()
-    else
-    	textInputObj:Hide()
-    end
-    
-    if enabled then
-    	textInputObj:Enable()
-    else
-    	textInputObj:Disable()
-	end
+	libuixml.setVisibleAndEnable(textInputObj,visible,enabled)
 
     local current = {}
 	current.parent = parent
@@ -157,6 +147,20 @@ end
 
 libuixml.getElementById = function(id)
 	return libuixml.elementMap[id]
+end
+
+libuixml.setVisibleAndEnable = function (obj,visible,enabled)
+    if visible then
+    	obj:Show()
+    else
+    	obj:Hide()
+    end
+    
+    if enabled then
+    	obj:Enable()
+    else
+    	obj:Disable()
+	end
 end
 
 libuixml.loadXML = function (xmlContents)

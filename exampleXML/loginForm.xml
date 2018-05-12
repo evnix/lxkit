@@ -1,0 +1,9 @@
+<App>
+<Window title="Example" id="win1" width="300" height="500" hasMenubar="false">
+	<VerticalBox>
+	    <TextInput id="username" enabled="true" >adi</TextInput>
+	    <TextInput id="password" mode="password">somePass</TextInput>
+	    <Button id="btn1" stretchy="false"  >Login</Button>
+	</VerticalBox>
+</Window>
+</App>
